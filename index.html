@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClickStorm Media VR - Sell Faster with Email Excalibur™️ System</title>
+    <meta name="description" content="Advanced AI-powered email marketing that works in the background. Our Email Excalibur™️ System gives you competitive advantage without compromising your brand voice.">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
+        color: #f8fafc;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 80px 0;
+        position: relative;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+      }
+
+      .badge {
+        display: inline-block;
+        background: linear-gradient(90deg, #ef4444, #dc2626);
+        color: white;
+        padding: 8px 24px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 32px;
+        box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 8vw, 6rem);
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero p {
+        font-size: clamp(1.1rem, 3vw, 1.5rem);
+        color: #cbd5e1;
+        margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .btn {
+        display: inline-block;
+        background: linear-gradient(90deg, #2563eb, #3b82f6);
+        color: white;
+        padding: 16px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
+      }
+
+      /* Section Styling */
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-title {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .section-subtitle {
+        font-size: 1.25rem;
+        color: #9ca3af;
+        text-align: center;
+        margin-bottom: 60px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Benefits Grid */
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+        margin-top: 60px;
+      }
+
+      .benefit-card {
+        background: rgba(30, 41, 59, 0.5);
+        border: 1px solid rgba(71, 85, 105, 0.5);
+        border-radius: 12px;
+        padding: 32px;
+        text-align: center;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-5px);
+        background: rgba(51, 65, 85, 0.5);
+        border-color: rgba(71, 85, 105, 0.8);
+      }
+
+      .benefit-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .benefit-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 16px;
+      }
+
+      .benefit-description {
+        color: #9ca3af;
+        line-height: 1.6;
+      }
+
+      /* Testimonials */
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 32px;
+        margin-top: 60px;
+      }
+
+      .testimonial-card {
+        background: rgba(30, 41, 59, 0.3);
+        border: 1px solid rgba(71, 85, 105, 0.6);
+        border-radius: 12px;
+        padding: 32px;
+        backdrop-filter: blur(20px);
+      }
+
+      .testimonial-quote {
+        font-size: 1.125rem;
+        color: #d1d5db;
+        font-style: italic;
+        margin-bottom: 24px;
+      }
+
+      .testimonial-author {
+        border-top: 1px solid rgba(71, 85, 105, 0.6);
+        padding-top: 20px;
+      }
+
+      .author-name {
+        font-weight: 600;
+        color: white;
+        margin-bottom: 4px;
+      }
+
+      .author-position {
+        color: #60a5fa;
+        font-size: 0.9rem;
+      }
+
+      /* Services Grid */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 32px;
+        margin-top: 60px;
+      }
+
+      .service-card {
+        background: rgba(30, 58, 138, 0.4);
+        border: 1px solid rgba(71, 85, 105, 0.6);
+        border-radius: 12px;
+        padding: 32px;
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        background: rgba(51, 65, 85, 0.4);
+      }
+
+      .service-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 16px;
+      }
+
+      .service-description {
+        color: #9ca3af;
+      }
+
+      /* CTA Section */
+      .cta-section {
+        background: linear-gradient(90deg, #1e3a8a, #0f172a);
+        text-align: center;
+      }
+
+      .cta-benefits {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+        margin: 40px 0;
+        text-align: left;
+      }
+
+      .cta-benefit {
+        color: #d1d5db;
+        font-size: 1.125rem;
+      }
+
+      /* Contact Form */
+      .contact-form-section {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+      }
+
+      .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .form-card {
+        background: rgba(30, 41, 59, 0.5);
+        border: 1px solid rgba(71, 85, 105, 0.7);
+        border-radius: 16px;
+        padding: 48px;
+        backdrop-filter: blur(20px);
+      }
+
+      .form-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+
+      .form-subtitle {
+        color: #9ca3af;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 1.125rem;
+      }
+
+      .form-group {
+        margin-bottom: 24px;
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .form-label {
+        display: block;
+        color: white;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .form-input {
+        width: 100%;
+        background: #334155;
+        border: 1px solid #475569;
+        border-radius: 8px;
+        padding: 12px 16px;
+        color: white;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-input:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      }
+
+      .form-input::placeholder {
+        color: #9ca3af;
+      }
+
+      .form-submit {
+        width: 100%;
+        background: linear-gradient(90deg, #2563eb, #3b82f6);
+        color: white;
+        padding: 16px;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+      }
+
+      .form-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
+      }
+
+      /* Footer */
+      .footer {
+        background: #0f172a;
+        border-top: 1px solid rgba(71, 85, 105, 0.7);
+        padding: 32px 0;
+        text-align: center;
+      }
+
+      .footer-text {
+        color: #6b7280;
+        margin-bottom: 8px;
+      }
+
+      .footer-disclaimer {
+        color: #4b5563;
+        font-size: 0.875rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+
+        .cta-benefits {
+          grid-template-columns: 1fr;
+        }
+
+        .benefits-grid, .testimonials-grid, .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .form-card {
+          padding: 32px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="badge">Trusted by 500+ service professionals including dentists, accountants, lawyers, and consultants</div>
+        <h1>Sell Faster and Sell More Effortlessly With Email Marketing That Actually Converts</h1>
+        <p>Our Email Excalibur™️ System uses the most advanced AI tools to give you an advantage over competitors without the worry of learning new tools or compromising your brand's voice.</p>
+        <a href="#contact-form" class="btn">Get Your Free Strategy Session</a>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+      <div class="container">
+        <h2 class="section-title">You No Longer Have To Choose Between Your Time Or Your Bank Balance</h2>
+        <p class="section-subtitle">You can finally enjoy the best of both worlds. A world class system that works for you and provides reliable results that almost feels like cheating.</p>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <span class="benefit-icon">🎯</span>
+            <h3 class="benefit-title">Advanced AI-Powered Campaigns</h3>
+            <p class="benefit-description">Our Email Excalibur™️ System uses cutting-edge AI to create campaigns that outperform competitors while preserving your unique brand voice</p>
+          </div>
+
+          <div class="benefit-card">
+            <span class="benefit-icon">🔒</span>
+            <h3 class="benefit-title">Works in the Background</h3>
+            <p class="benefit-description">Stay focused on running your business while our system handles lead generation, nurturing, and conversions automatically</p>
+          </div>
+
+          <div class="benefit-card">
+            <span class="benefit-icon">💡</span>
+            <h3 class="benefit-title">No Learning Curve Required</h3>
+            <p class="benefit-description">Gain competitive advantage without worrying about learning new tools or compromising your professional brand</p>
+          </div>
+
+          <div class="benefit-card">
+            <span class="benefit-icon">📈</span>
+            <h3 class="benefit-title">Effortless Revenue Growth</h3>
+            <p class="benefit-description">Watch your practice grow as satisfied clients turn into your best marketing channel through automated referral campaigns</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="section" style="background: linear-gradient(135deg, #0f172a, #1e3a8a);">
+      <div class="container">
+        <h2 class="section-title">Results That Almost Feel Like Cheating</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"The Email Excalibur™️ System increased our patient retention 47% in 6 months. It works completely in the background while I focus on patient care."</p>
+            <div class="testimonial-author">
+              <div class="author-name">Dr. Sarah Mitchell</div>
+              <div class="author-position">Cosmetic Dentistry Practice</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"I was skeptical about AI tools, but ClickStorm's system preserves my professional voice perfectly. Now 35% of my new clients come from automated email campaigns."</p>
+            <div class="testimonial-author">
+              <div class="author-name">Michael Rodriguez, CPA</div>
+              <div class="author-position">Tax & Accounting Firm</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"The AI-powered campaigns generated $2.3M in new cases last year. It's like having a world-class marketing team working 24/7."</p>
+            <div class="testimonial-author">
+              <div class="author-name">Jennifer Walsh, Esq.</div>
+              <div class="author-position">Personal Injury Attorney</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" style="background: linear-gradient(135deg, #1e3a8a, #0f172a);">
+      <div class="container">
+        <h2 class="section-title">Email Excalibur™️ System - Complete AI-Powered Solutions</h2>
+        <p class="section-subtitle">Advanced AI handles everything automatically so you stay focused on serving clients while revenue grows effortlessly</p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 class="service-title">AI Welcome Sequences</h3>
+            <p class="service-description">Intelligent onboarding campaigns that adapt to each client type while maintaining your professional brand voice</p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">Smart Appointment Automation</h3>
+            <p class="service-description">AI-powered reminders and follow-ups that reduce no-shows without any manual work from your team</p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">Intelligent Content Creation</h3>
+            <p class="service-description">Advanced AI generates valuable, industry-specific content that positions you as the expert automatically</p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">Automated Reactivation Campaigns</h3>
+            <p class="service-description">Smart systems that win back inactive clients with personalized messaging that feels human, not robotic</p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">AI-Driven Referral Programs</h3>
+            <p class="service-description">Intelligent campaigns that systematically encourage and reward referrals using proven psychological triggers</p>
+          </div>
+
+          <div class="service-card">
+            <h3 class="service-title">Seasonal Campaign Automation</h3>
+            <p class="service-description">AI anticipates and launches timely campaigns for tax season, open enrollment, and preventive care automatically</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <h2 class="section-title">Ready to Experience Email Marketing That Almost Feels Like Cheating?</h2>
+        <p class="section-subtitle">Get a free 30-minute strategy session where we'll show you exactly how our Email Excalibur™️ System can grow your business effortlessly.</p>
+
+        <div class="cta-benefits">
+          <div class="cta-benefit">✓ AI-powered strategy customized for your specific practice</div>
+          <div class="cta-benefit">✓ See how to gain competitive advantage without learning new tools</div>
+          <div class="cta-benefit">✓ Preview campaigns that preserve your professional brand voice</div>
+          <div class="cta-benefit">✓ ROI projections that show the best of both worlds - time AND money</div>
+        </div>
+
+        <a href="#contact-form" class="btn">Discover Email Excalibur™️ System</a>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="section contact-form-section">
+      <div class="container">
+        <div class="form-container">
+          <div class="form-card">
+            <h2 class="form-title">Experience the Email Excalibur™️ Advantage</h2>
+            <p class="form-subtitle">Tell us about your practice and discover how AI can grow your business while you focus on what you do best</p>
+
+            <form onsubmit="handleSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input class="form-input" id="firstName" type="text" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input class="form-input" id="lastName" type="text" placeholder="Last Name" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" id="email" type="email" placeholder="Email Address" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="practice">Type of Practice (Optional)</label>
+                <input class="form-input" id="practice" type="text" placeholder="Type of Practice (optional)">
+              </div>
+
+              <button type="submit" class="form-submit">Get My Free AI Strategy Session</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">© 2025 ClickStorm Media VR. All Rights Reserved.</p>
+        <p class="footer-disclaimer">Results may vary. This site is not affiliated with any professional licensing boards.</p>
+      </div>
+    </footer>
+
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        const formData = {
+          firstName: document.getElementById('firstName').value,
+          lastName: document.getElementById('lastName').value,
+          email: document.getElementById('email').value,
+          practice: document.getElementById('practice').value
+        };
+
+        console.log('Form submitted:', formData);
+        alert('Thank you! We\'ll contact you soon to schedule your free AI strategy session.');
+
+        // Here you would typically send the data to your email service
+        // For example: send to Mailchimp, ConvertKit, or your backend
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
